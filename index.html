@@ -15,19 +15,23 @@
     <a-scene>
       <a-assets>
 
-        <img id="pd1" crossorigin="anonymous" src="img/udW58cBhHup5_equirectangular_16384max4_1.jpg">
-        <img id="pd4" crossorigin="anonymous" src="img/sZcFdUyWDUWk_equirectangular_16384max4_1.jpg">
-        <img id="pd3" crossorigin="anonymous" src="img/tyqEZ6Dk3EPz_equirectangular_16384max4_1.jpg">
-        <img id="pd2" crossorigin="anonymous" src="img/aaOIxlVQ8Ogy_equirectangular_16384max4_1.jpg">
+	<img id="pd2" crossorigin="anonymous" src="img/aaOIxlVQ8Ogy_equirectangular_16384max4_1.jpg">
+	<img id="pd3" crossorigin="anonymous" src="img/tyqEZ6Dk3EPz_equirectangular_16384max4_1.jpg">
+	<img id="pd4" crossorigin="anonymous" src="img/sZcFdUyWDUWk_equirectangular_16384max4_1.jpg">
         <img id="pd5" crossorigin="anonymous" src="img/vFxvEOLcTeYg_equirectangular_16384max4.jpg">
         <img id="pd6" crossorigin="anonymous" src="img/CElRvU108Bbr_equirectangular_16384max4_1.jpg">
+	<img id="pd7" crossorigin="anonymous" src="img/201902-023_21.jpg">
+	<img id="pd8" crossorigin="anonymous" src="img/201803-89_03.jpg">
+	<img id="pd9" crossorigin="anonymous" src="img/origin_3_0_Panorama.jpg">
 
-        <img id="pd1-thumb" crossorigin="anonymous" src="img/pd1-thumb.png">
         <img id="pd2-thumb" crossorigin="anonymous" src="img/pd2-thumb.png">
         <img id="pd3-thumb" crossorigin="anonymous" src="img/pd3-thumb.png">
         <img id="pd4-thumb" crossorigin="anonymous" src="img/pd4-thumb.png">
         <img id="pd5-thumb" crossorigin="anonymous" src="img/pd5-thumb.png">
         <img id="pd6-thumb" crossorigin="anonymous" src="img/pd6-thumb.png">
+	<img id="pd7-thumb" crossorigin="anonymous" src="img/pd7-thumb.png">
+        <img id="pd8-thumb" crossorigin="anonymous" src="img/pd8-thumb.png">
+        <img id="pd9-thumb" crossorigin="anonymous" src="img/pd9-thumb.png">
 
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
@@ -44,18 +48,20 @@
         </script>
       </a-assets>
 
-      <a-sky id="image-360" radius="10" src="#pd3"></a-sky>
+      <a-sky id="image-360" radius="10" src="#pd9"></a-sky>
 
       <a-entity id="links0" layout="type: line; margin: 1.5" position="-2.25 0 -4">
-        <a-entity template="src: #link" data-src="#pd1" data-thumb="#pd1-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#pd2" data-thumb="#pd2-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#pd3" data-thumb="#pd3-thumb"></a-entity>
+       <a-entity template="src: #link" data-src="#pd2" data-thumb="#pd2-thumb"></a-entity>
+       <a-entity template="src: #link" data-src="#pd3" data-thumb="#pd3-thumb"></a-entity>
+       <a-entity template="src: #link" data-src="#pd4" data-thumb="#pd4-thumb"></a-entity>
+       <a-entity template="src: #link" data-src="#pd5" data-thumb="#pd5-thumb"></a-entity>
       </a-entity>
 
       <a-entity id="links1" layout="type: line; margin: 1.5" position="-2.25 -1.5 -4">
-        <a-entity template="src: #link" data-src="#pd4" data-thumb="#pd4-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#pd5" data-thumb="#pd5-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#pd6" data-thumb="#pd6-thumb"></a-entity>
+	<a-entity template="src: #link" data-src="#pd7" data-thumb="#pd7-thumb"></a-entity>
+	<a-entity template="src: #link" data-src="#pd8" data-thumb="#pd8-thumb"></a-entity>
+	<a-entity template="src: #link" data-src="#pd9" data-thumb="#pd9-thumb"></a-entity>
       </a-entity>
 
       <a-entity camera look-controls>
